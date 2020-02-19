@@ -148,29 +148,31 @@ Create a file for each control. Place the file(s) in `/project/db/controls/…/c
 For example, `/project/db/controls/theme/colour.json`:
 ```JSON
 {
-    {
-        "label": {
-            "en-GB": "Theme Colour"
+    "label": {
+        "en-GB": "Theme Colour"
+    },
+    "value": "",
+    "control": "core/list",
+    "options": [
+        {
+            "label": {
+                "en-GB": "Red"
+            },
+            "value": "#FF0000"
         },
-        "value": "",
-        "control": "core/list",
-        "options": [
-            {
-                "label": {
-                    "en-GB": "Red",
-                    "value": "#FF0000"
-                },
-                "label": {
-                    "en-GB": "Green",
-                    "value": "#008000"
-                },
-                "label": {
-                    "en-GB": "Blue",
-                    "value": "#0000FF"
-                }
-            }
-        ]
-    }
+        {
+            "label": {
+                "en-GB": "Green"
+            },
+            "value": "#008000"
+        },
+        {
+            "label": {
+                "en-GB": "Blue"
+            },
+            "value": "#0000FF"
+        }
+    ]
 }
 ```
 
